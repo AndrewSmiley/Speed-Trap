@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58CB09AE8E0BC626F76C8784 /* Pods_Speed_Trap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D6A998041FD163F7F89083 /* Pods_Speed_Trap.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		94C0EAFC1BA2745A001F825F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0EAFB1BA2745A001F825F /* AppDelegate.swift */; };
 		94C0EAFE1BA2745A001F825F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0EAFD1BA2745A001F825F /* FirstViewController.swift */; };
 		94C0EB001BA2745A001F825F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0EAFF1BA2745A001F825F /* SecondViewController.swift */; };
@@ -14,6 +15,20 @@
 		94C0EB051BA2745A001F825F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C0EB041BA2745A001F825F /* Images.xcassets */; };
 		94C0EB081BA2745A001F825F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94C0EB061BA2745A001F825F /* LaunchScreen.xib */; };
 		94C0EB141BA2745A001F825F /* Speed_TrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0EB131BA2745A001F825F /* Speed_TrapTests.swift */; };
+		94C0EB2B1BA278AB001F825F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB1F1BA278AB001F825F /* AVFoundation.framework */; };
+		94C0EB2C1BA278AB001F825F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB201BA278AB001F825F /* CoreData.framework */; };
+		94C0EB2D1BA278AB001F825F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB211BA278AB001F825F /* CoreLocation.framework */; };
+		94C0EB2E1BA278AB001F825F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB221BA278AB001F825F /* CoreText.framework */; };
+		94C0EB2F1BA278AB001F825F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB231BA278AB001F825F /* GLKit.framework */; };
+		94C0EB301BA278AB001F825F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB241BA278AB001F825F /* ImageIO.framework */; };
+		94C0EB311BA278AB001F825F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB251BA278AB001F825F /* libc++.dylib */; };
+		94C0EB321BA278AB001F825F /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB261BA278AB001F825F /* libicucore.A.dylib */; };
+		94C0EB331BA278AB001F825F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB271BA278AB001F825F /* libz.dylib */; };
+		94C0EB341BA278AB001F825F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB281BA278AB001F825F /* OpenGLES.framework */; };
+		94C0EB351BA278AB001F825F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB291BA278AB001F825F /* QuartzCore.framework */; };
+		94C0EB361BA278AB001F825F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB2A1BA278AB001F825F /* SystemConfiguration.framework */; };
+		94C0EB3E1BA27E51001F825F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB3C1BA27E51001F825F /* Accelerate.framework */; };
+		94C0EB3F1BA27E51001F825F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB3D1BA27E51001F825F /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AE2A92FF95CC21D6F63C41E /* Pods-Speed Trap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speed Trap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Speed Trap/Pods-Speed Trap.debug.xcconfig"; sourceTree = "<group>"; };
+		4253769EBAA88FA0DFE059CD /* Pods-Speed Trap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speed Trap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Speed Trap/Pods-Speed Trap.release.xcconfig"; sourceTree = "<group>"; };
+		70D6A998041FD163F7F89083 /* Pods_Speed_Trap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speed_Trap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C0EAF61BA2745A001F825F /* Speed Trap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speed Trap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C0EAFA1BA2745A001F825F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C0EAFB1BA2745A001F825F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +56,21 @@
 		94C0EB0D1BA2745A001F825F /* Speed TrapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Speed TrapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C0EB121BA2745A001F825F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C0EB131BA2745A001F825F /* Speed_TrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed_TrapTests.swift; sourceTree = "<group>"; };
+		94C0EB1F1BA278AB001F825F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		94C0EB201BA278AB001F825F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		94C0EB211BA278AB001F825F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		94C0EB221BA278AB001F825F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		94C0EB231BA278AB001F825F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		94C0EB241BA278AB001F825F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		94C0EB251BA278AB001F825F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		94C0EB261BA278AB001F825F /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
+		94C0EB271BA278AB001F825F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		94C0EB281BA278AB001F825F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		94C0EB291BA278AB001F825F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		94C0EB2A1BA278AB001F825F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		94C0EB381BA27930001F825F /* Speed Trap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Speed Trap-Bridging-Header.h"; sourceTree = "<group>"; };
+		94C0EB3C1BA27E51001F825F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		94C0EB3D1BA27E51001F825F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +78,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C0EB3E1BA27E51001F825F /* Accelerate.framework in Frameworks */,
+				94C0EB3F1BA27E51001F825F /* CoreBluetooth.framework in Frameworks */,
+				94C0EB2B1BA278AB001F825F /* AVFoundation.framework in Frameworks */,
+				94C0EB2C1BA278AB001F825F /* CoreData.framework in Frameworks */,
+				94C0EB2D1BA278AB001F825F /* CoreLocation.framework in Frameworks */,
+				94C0EB2E1BA278AB001F825F /* CoreText.framework in Frameworks */,
+				94C0EB2F1BA278AB001F825F /* GLKit.framework in Frameworks */,
+				94C0EB301BA278AB001F825F /* ImageIO.framework in Frameworks */,
+				94C0EB311BA278AB001F825F /* libc++.dylib in Frameworks */,
+				94C0EB321BA278AB001F825F /* libicucore.A.dylib in Frameworks */,
+				94C0EB331BA278AB001F825F /* libz.dylib in Frameworks */,
+				94C0EB341BA278AB001F825F /* OpenGLES.framework in Frameworks */,
+				94C0EB351BA278AB001F825F /* QuartzCore.framework in Frameworks */,
+				94C0EB361BA278AB001F825F /* SystemConfiguration.framework in Frameworks */,
+				58CB09AE8E0BC626F76C8784 /* Pods_Speed_Trap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84552A9CA5D6B0818B34D9E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2A92FF95CC21D6F63C41E /* Pods-Speed Trap.debug.xcconfig */,
+				4253769EBAA88FA0DFE059CD /* Pods-Speed Trap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		94C0EAED1BA2745A001F825F = {
 			isa = PBXGroup;
 			children = (
+				94C0EB371BA278C3001F825F /* Frameworks */,
 				94C0EAF81BA2745A001F825F /* Speed Trap */,
 				94C0EB101BA2745A001F825F /* Speed TrapTests */,
 				94C0EAF71BA2745A001F825F /* Products */,
+				84552A9CA5D6B0818B34D9E6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +145,7 @@
 				94C0EB041BA2745A001F825F /* Images.xcassets */,
 				94C0EB061BA2745A001F825F /* LaunchScreen.xib */,
 				94C0EAF91BA2745A001F825F /* Supporting Files */,
+				94C0EB381BA27930001F825F /* Speed Trap-Bridging-Header.h */,
 			);
 			path = "Speed Trap";
 			sourceTree = "<group>";
@@ -115,6 +175,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		94C0EB371BA278C3001F825F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94C0EB3C1BA27E51001F825F /* Accelerate.framework */,
+				94C0EB3D1BA27E51001F825F /* CoreBluetooth.framework */,
+				94C0EB1F1BA278AB001F825F /* AVFoundation.framework */,
+				94C0EB201BA278AB001F825F /* CoreData.framework */,
+				94C0EB211BA278AB001F825F /* CoreLocation.framework */,
+				94C0EB221BA278AB001F825F /* CoreText.framework */,
+				94C0EB231BA278AB001F825F /* GLKit.framework */,
+				94C0EB241BA278AB001F825F /* ImageIO.framework */,
+				94C0EB251BA278AB001F825F /* libc++.dylib */,
+				94C0EB261BA278AB001F825F /* libicucore.A.dylib */,
+				94C0EB271BA278AB001F825F /* libz.dylib */,
+				94C0EB281BA278AB001F825F /* OpenGLES.framework */,
+				94C0EB291BA278AB001F825F /* QuartzCore.framework */,
+				94C0EB2A1BA278AB001F825F /* SystemConfiguration.framework */,
+				70D6A998041FD163F7F89083 /* Pods_Speed_Trap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94C0EB171BA2745A001F825F /* Build configuration list for PBXNativeTarget "Speed Trap" */;
 			buildPhases = (
+				DB850199A3D78D9C74EAC3AA /* Check Pods Manifest.lock */,
 				94C0EAF21BA2745A001F825F /* Sources */,
 				94C0EAF31BA2745A001F825F /* Frameworks */,
 				94C0EAF41BA2745A001F825F /* Resources */,
+				14701137A64104F56561EA56 /* Embed Pods Frameworks */,
+				639A250BFFB2F0A9FA1AD2E2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14701137A64104F56561EA56 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Speed Trap/Pods-Speed Trap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		639A250BFFB2F0A9FA1AD2E2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Speed Trap/Pods-Speed Trap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB850199A3D78D9C74EAC3AA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94C0EAF21BA2745A001F825F /* Sources */ = {
@@ -344,21 +477,103 @@
 		};
 		94C0EB181BA2745A001F825F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE2A92FF95CC21D6F63C41E /* Pods-Speed Trap.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Speed Trap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Speed Trap/Speed Trap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "armv7 arm64";
+				"VALID_ARCHS[sdk=*]" = "armv7 arm64";
 			};
 			name = Debug;
 		};
 		94C0EB191BA2745A001F825F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4253769EBAA88FA0DFE059CD /* Pods-Speed Trap.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Speed Trap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Speed Trap/Speed Trap-Bridging-Header.h";
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Release;
 		};
@@ -415,6 +630,7 @@
 				94C0EB191BA2745A001F825F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94C0EB1A1BA2745A001F825F /* Build configuration list for PBXNativeTarget "Speed TrapTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +639,7 @@
 				94C0EB1C1BA2745A001F825F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

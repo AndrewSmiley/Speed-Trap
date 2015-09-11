@@ -4,7 +4,7 @@ use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Speed Trap' do
-pod 'Alamofire', '1.2.3'
+pod 'GoogleMaps'
 end
 
 target 'Speed TrapTests' do
