@@ -29,6 +29,7 @@
 		94C0EB361BA278AB001F825F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB2A1BA278AB001F825F /* SystemConfiguration.framework */; };
 		94C0EB3E1BA27E51001F825F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB3C1BA27E51001F825F /* Accelerate.framework */; };
 		94C0EB3F1BA27E51001F825F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C0EB3D1BA27E51001F825F /* CoreBluetooth.framework */; };
+		94C0EB5C1BA5BEB7001F825F /* GoogleAPIRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0EB5B1BA5BEB7001F825F /* GoogleAPIRequestor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		94C0EB381BA27930001F825F /* Speed Trap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Speed Trap-Bridging-Header.h"; sourceTree = "<group>"; };
 		94C0EB3C1BA27E51001F825F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		94C0EB3D1BA27E51001F825F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		94C0EB5B1BA5BEB7001F825F /* GoogleAPIRequestor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAPIRequestor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		94C0EAF81BA2745A001F825F /* Speed Trap */ = {
 			isa = PBXGroup;
 			children = (
+				94C0EB5A1BA5BE9E001F825F /* Utilities */,
 				94C0EAFB1BA2745A001F825F /* AppDelegate.swift */,
 				94C0EAFD1BA2745A001F825F /* FirstViewController.swift */,
 				94C0EAFF1BA2745A001F825F /* SecondViewController.swift */,
@@ -195,6 +198,14 @@
 				70D6A998041FD163F7F89083 /* Pods_Speed_Trap.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94C0EB5A1BA5BE9E001F825F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				94C0EB5B1BA5BEB7001F825F /* GoogleAPIRequestor.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C0EB5C1BA5BEB7001F825F /* GoogleAPIRequestor.swift in Sources */,
 				94C0EB001BA2745A001F825F /* SecondViewController.swift in Sources */,
 				94C0EAFC1BA2745A001F825F /* AppDelegate.swift in Sources */,
 				94C0EAFE1BA2745A001F825F /* FirstViewController.swift in Sources */,
