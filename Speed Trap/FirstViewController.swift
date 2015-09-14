@@ -109,6 +109,9 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, GMSMapVi
             mapView.settings.myLocationButton = true
             label.text = String(stringInterpolationSegment: Int(myLocation.speed*2.23693629))+" mph"
         googleAPIRequestor.getSpeedLimit(String(stringInterpolationSegment: myLocation.coordinate.longitude), latitude: String(stringInterpolationSegment: myLocation.coordinate.latitude), withCompletionHandler: {(status: String, success: Bool, speed: String) -> Void in
+            if(success){
+                println("Success")
+            }
 
             
         })
