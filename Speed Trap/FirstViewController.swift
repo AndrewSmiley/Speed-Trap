@@ -9,14 +9,19 @@
 import UIKit
 import GoogleMaps
 import CoreLocation
-
+import AVFoundation
 class FirstViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     @IBOutlet var mapView: GMSMapView!
     var locationManager = CLLocationManager()
-    let label = UILabel(frame: CGRectMake(0, 0, 200, 35) )
+
+    let label = UILabel(frame: CGRectMake(0, 0, 250, 100) )
+//    let label = UILAb
     let googleAPIRequestor = GoogleAPIRequestor()
     var currentLocation: CLLocation = CLLocation()
     var didFindMyLocation = false
+    var sirenSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("siren", ofType: "wav")!)
+    var audioPlayer = AVAudioPlayer()
+
 //    let speedManager = CLLocationSpeed();
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +41,8 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, GMSMapVi
         label.text = "0 mph"
         self.view.addSubview(label)
         mapView.addObserver(self, forKeyPath: "myLocation", options: NSKeyValueObservingOptions.New, context: nil)
+        audioPlayer = AVAudioPlayer(contentsOfURL: sirenSound, error: nil)
+        audioPlayer.prepareToPlay()
 
     }
 
@@ -107,10 +114,15 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, GMSMapVi
             mapView.camera = camera
             println(String(stringInterpolationSegment: mapView.myLocation.coordinate.longitude)+","+String(stringInterpolationSegment: mapView.myLocation.coordinate.latitude))
             mapView.settings.myLocationButton = true
-            label.text = String(stringInterpolationSegment: Int(myLocation.speed*2.23693629))+" mph"
-        googleAPIRequestor.getSpeedLimit(String(stringInterpolationSegment: myLocation.coordinate.longitude), latitude: String(stringInterpolationSegment: myLocation.coordinate.latitude), withCompletionHandler: {(status: String, success: Bool, speed: String) -> Void in
+//            label.text = String(stringInterpolationSegment: Int(myLocation.speed*2.23693629))+" mph"
+                    googleAPIRequestor.getSpeedLimit(String(stringInterpolationSegment: myLocation.coordinate.longitude), latitude: String(stringInterpolationSegment: myLocation.coordinate.latitude), withCompletionHandler: {(status: String, success: Bool, speed: String) -> Void in
             if(success){
-                println("Success")
+                self.label.text = String(stringInterpolationSegment: Int(myLocation.speed*2.23693629))+" mph of "+speed+" mph"
+                if(Int(myLocation.speed*2.23693629) > (speed.toInt()!+4)){
+                    self.audioPlayer.play()
+
+                }
+                
             }
 
             

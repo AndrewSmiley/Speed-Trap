@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58CB09AE8E0BC626F76C8784 /* Pods_Speed_Trap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D6A998041FD163F7F89083 /* Pods_Speed_Trap.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9407F4061BA7BF03009A4406 /* siren.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9407F4051BA7BF03009A4406 /* siren.wav */; };
 		94C0EAFC1BA2745A001F825F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0EAFB1BA2745A001F825F /* AppDelegate.swift */; };
 		94C0EAFE1BA2745A001F825F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0EAFD1BA2745A001F825F /* FirstViewController.swift */; };
 		94C0EB001BA2745A001F825F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C0EAFF1BA2745A001F825F /* SecondViewController.swift */; };
@@ -46,6 +47,7 @@
 		0AE2A92FF95CC21D6F63C41E /* Pods-Speed Trap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speed Trap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Speed Trap/Pods-Speed Trap.debug.xcconfig"; sourceTree = "<group>"; };
 		4253769EBAA88FA0DFE059CD /* Pods-Speed Trap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speed Trap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Speed Trap/Pods-Speed Trap.release.xcconfig"; sourceTree = "<group>"; };
 		70D6A998041FD163F7F89083 /* Pods_Speed_Trap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speed_Trap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9407F4051BA7BF03009A4406 /* siren.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = siren.wav; sourceTree = "<group>"; };
 		94C0EAF61BA2745A001F825F /* Speed Trap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speed Trap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C0EAFA1BA2745A001F825F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C0EAFB1BA2745A001F825F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		94C0EAF91BA2745A001F825F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9407F4051BA7BF03009A4406 /* siren.wav */,
 				94C0EAFA1BA2745A001F825F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -293,6 +296,7 @@
 			files = (
 				94C0EB031BA2745A001F825F /* Main.storyboard in Resources */,
 				94C0EB081BA2745A001F825F /* LaunchScreen.xib in Resources */,
+				9407F4061BA7BF03009A4406 /* siren.wav in Resources */,
 				94C0EB051BA2745A001F825F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

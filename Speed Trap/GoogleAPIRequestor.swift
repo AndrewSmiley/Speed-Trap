@@ -23,7 +23,9 @@ class GoogleAPIRequestor {
             var error: NSError?
             let dictionary: Dictionary<NSObject, AnyObject> = NSJSONSerialization.JSONObjectWithData(speedLimitResultsData, options: NSJSONReadingOptions.MutableContainers, error: &error) as! Dictionary<NSObject, AnyObject>
 //        let json = JSON(data: speedLimitResultsData)
-        let JSONObject: AnyObject? = NSJSONSerialization.JSONObjectWithData(speedLimitResultsData, options: nil, error: nil)
+        var parseError: NSError?
+        let JSONObject: AnyObject? = NSJSONSerialization.JSONObjectWithData(speedLimitResultsData, options: NSJSONReadingOptions.AllowFragments, error: &parseError)
+        
         
 //        if let statusesArray = JSONObject as? [AnyObject],
 //            let status = statusesArray[0] as? [String: AnyObject],
@@ -35,26 +37,14 @@ class GoogleAPIRequestor {
                 println(error)
                 completionHandler(status: "", success: false, speed: "")
             }else{
-//                
-                let allResults = dictionary["Response"] as! Array<Dictionary<String, AnyObject>>
-                let moreShit = allResults[1] as! Array<Dictionary<String, AnyObject>>
-                println("Fuck you")
-//                let speed = moreShit[
-//                if let info = JSONObject as? [AnyObject],
-//                    let response = info[0] as? [String:AnyObject],
-//                    let link:Dictionary = response["Link"] as? [String:AnyObject],
-//                    let dynamicSpeedInfo:Dictionary = link["DynamicSpeedInfo"] as? [String:AnyObject],
-//                    let speed = dynamicSpeedInfo["BaseSpeed"] as? String{
-//                        completionHandler(status: "OK", success: true, speed: speed)
-//                        
-//                }
-//              let status = dictionary["status"] as! String
-//                var linkValues = (dictionary["Reponse"]?["Link"] as? [String:AnyObject])!
-//                var speedValues = linkValues["DynamicSpeedInfo"] as? [String:AnyObject]
-//                println((linkValues["DynamicSpeedInfo"]?["BaseSpeed"] as? String)!)
-//                println(String(stringInterpolationSegment: dictionary["Response"]?["Link"]?["DynamicSpeedInfo"]["BaseSpeed"]));
-//                completionHandler(status: "", success: true, speed: (linkValues["DynamicSpeedInfo"]?["BaseSpeed"] as? String)!);
-//                completionHandler(status: status, success: true, speed: String(stringInterpolationSegment: dictionary["Response"]["Link"]["DynamicSpeedInfo"]["BaseSpeed"]))
+                let duck: NSDictionary = (JSONObject as? NSDictionary)!
+                let goose: NSDictionary = (duck["Response"] as? NSDictionary)!
+                let pigeon: NSArray = (goose["Link"] as? NSArray)!
+                let snipe: NSDictionary = (pigeon[0] as? NSDictionary)!
+                let swallow: NSDictionary = (snipe["DynamicSpeedInfo"] as? NSDictionary)!
+                let roadRunner: NSNumber = (swallow["BaseSpeed"] as? NSNumber)!
+                completionHandler(status: "OK", success: true, speed: roadRunner.stringValue)
+
                 
             }
 //        })
